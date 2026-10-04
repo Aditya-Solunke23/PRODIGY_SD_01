@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Temperature Converter</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section class="converter-card">
+
+            <div class="header">
+
+                <div class="temperature-icon">
+                    🌡️
+                </div>
+
+                <h1>Temperature Converter</h1>
+
+                <p>
+                    Convert temperatures between Celsius,
+                    Fahrenheit and Kelvin.
+                </p>
+
+            </div>
+
+
+            <div class="form-section">
+
+                <label for="temperature">
+                    Temperature
+                </label>
+
+                <input
+                    type="number"
+                    id="temperature"
+                    placeholder="Enter temperature"
+                    step="any"
+                >
+
+
+                <label for="unit">
+                    Convert From
+                </label>
+
+                <select id="unit">
+
+                    <option value="celsius">
+                        Celsius (°C)
+                    </option>
+
+                    <option value="fahrenheit">
+                        Fahrenheit (°F)
+                    </option>
+
+                    <option value="kelvin">
+                        Kelvin (K)
+                    </option>
+
+                </select>
+
+
+                <div class="button-group">
+
+                    <button id="convertBtn">
+                        Convert Temperature
+                    </button>
+
+                    <button id="clearBtn" class="clear-btn">
+                        Clear
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div id="message" class="message"></div>
+
+
+            <section
+                id="resultSection"
+                class="results hidden"
+            >
+
+                <h2>Conversion Results</h2>
+
+                <div class="result-grid">
+
+                    <div class="result-card">
+
+                        <span class="result-label">
+                            Celsius
+                        </span>
+
+                        <span
+                            id="celsiusResult"
+                            class="result-value"
+                        >
+                            —
+                        </span>
+
+                    </div>
+
+
+                    <div class="result-card">
+
+                        <span class="result-label">
+                            Fahrenheit
+                        </span>
+
+                        <span
+                            id="fahrenheitResult"
+                            class="result-value"
+                        >
+                            —
+                        </span>
+
+                    </div>
+
+
+                    <div class="result-card">
+
+                        <span class="result-label">
+                            Kelvin
+                        </span>
+
+                        <span
+                            id="kelvinResult"
+                            class="result-value"
+                        >
+                            —
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <footer>
+                Prodigy InfoTech — Software Development Internship
+            </footer>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
